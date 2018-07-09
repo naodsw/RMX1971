@@ -30,6 +30,9 @@ PRODUCT_COPY_FILES += $(DEVICE_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SY
 # Kernel
 $(call inherit-product, $(DEVICE_PATH)-kernel/device-kernel.mk)
 
+# Lights
+PRODUCT_PACKAGES += android.hardware.light@2.0-service.rmx1971
+
 # QTI components
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_COMMON_QTI_COMPONENTS += all
