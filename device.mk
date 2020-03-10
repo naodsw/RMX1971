@@ -18,6 +18,10 @@
 DEVICE_PATH := device/realme/RMX1971
 PRODUCT_TARGET_VNDK_VERSION := 29
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.oppo.compat
+
 # Inherit dalvik configurations (4GB)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 

@@ -44,6 +44,9 @@ TARGET_NO_BOOTLOADER := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+
 # Kernel
 include $(DEVICE_PATH)-kernel/BoardConfigKernel.mk
 
