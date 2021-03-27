@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Top-level variables
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
