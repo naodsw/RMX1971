@@ -74,5 +74,8 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_PRODUCT := system/product
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # SEPolicy
 include $(DEVICE_PATH)-sepolicy/sepolicy.mk
