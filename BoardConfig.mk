@@ -77,5 +77,8 @@ TARGET_COPY_OUT_PRODUCT := system/product
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/fstab.recovery
+
 # SEPolicy
 include $(DEVICE_PATH)-sepolicy/sepolicy.mk
