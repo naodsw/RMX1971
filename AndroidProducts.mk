@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+#
+# Lunch Specifications
+#
+
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_RMX1971.mk
 
 COMMON_LUNCH_CHOICES := full_RMX1971-userdebug

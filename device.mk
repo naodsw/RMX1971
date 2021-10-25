@@ -14,13 +14,18 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/realme/RMX1971-kernel/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+#
+# Product Configurations
+#
 
-PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+# Declare environment variables
+DEVICE_PATH := device/realme/RMX1971
 
+# Use the non-open-source parts, if they're present
 $(call inherit-product-if-exists, vendor/realme/RMX1971/device-vendor.mk)
+
+# Kernel
+$(call inherit-product, $(DEVICE_PATH)-kernel/kernel.mk)
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 28

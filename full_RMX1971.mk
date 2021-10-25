@@ -13,9 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+
+#
+# AOSP Target Configurations
+#
+
+# Inherit common AOSP configurations
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+
+# Inherit product configurations
 $(call inherit-product, device/realme/RMX1971/device.mk)
 
+# Device identifications
 PRODUCT_NAME := full_RMX1971
 PRODUCT_DEVICE := RMX1971
 PRODUCT_BRAND := Android
