@@ -29,3 +29,6 @@ $(call inherit-product, $(DEVICE_PATH)-kernel/kernel.mk)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Soong namespace
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
