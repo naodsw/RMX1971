@@ -24,6 +24,9 @@ DEVICE_PATH := device/realme/RMX1971
 # Use the non-open-source parts, if they're present
 $(call inherit-product-if-exists, vendor/realme/RMX1971/device-vendor.mk)
 
+# Input
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
+
 # Kernel
 $(call inherit-product, $(DEVICE_PATH)-kernel/kernel.mk)
 
