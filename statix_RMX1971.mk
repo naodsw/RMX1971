@@ -14,14 +14,13 @@
 # limitations under the License.
 #
 
-#
-# Lunch Specifications
-#
+# Inherit full target configurations
+$(call inherit-product, device/realme/RMX1971/full_RMX1971.mk)
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_RMX1971.mk \
-    $(LOCAL_DIR)/statix_RMX1971.mk
+# Inherit common StatiXOS configurations
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
-COMMON_LUNCH_CHOICES := \
-    full_RMX1971-userdebug \
-    statix_RMX1971-userdebug
+# Target identifications
+PRODUCT_NAME := statix_RMX1971
+TARGET_DOES_NOT_USE_GAPPS := true
