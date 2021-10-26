@@ -66,6 +66,7 @@ PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.0
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab \
+    init.logcat \
     init.qcom
 
 # Soong namespace
