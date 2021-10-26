@@ -86,3 +86,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/fstab.recovery
 
 # SEPolicy
 include $(DEVICE_PATH)-sepolicy/sepolicy.mk
+
+# Vendor SPL
+VENDOR_SECURITY_PATCH := 2021-07-05
