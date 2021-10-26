@@ -35,8 +35,12 @@ PRODUCT_COPY_FILES += $(DEVICE_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COP
 # Kernel
 $(call inherit-product, $(DEVICE_PATH)-kernel/kernel.mk)
 
-# Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 28
+# Rootdir
+PRODUCT_PACKAGES += fstab
 
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
+# VNDK
+PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_TARGET_VNDK_VERSION := 29
