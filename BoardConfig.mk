@@ -90,5 +90,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/fstab.recovery
 # SEPolicy
 include $(DEVICE_PATH)-sepolicy/sepolicy.mk
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+
 # Vendor SPL
 VENDOR_SECURITY_PATCH := 2021-07-05
