@@ -64,7 +64,9 @@ $(call inherit-product, $(DEVICE_PATH)-kernel/kernel.mk)
 PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.0
 
 # Rootdir
-PRODUCT_PACKAGES += fstab
+PRODUCT_PACKAGES += \
+    fstab \
+    init.qcom
 
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
