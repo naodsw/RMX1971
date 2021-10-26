@@ -24,6 +24,11 @@ DEVICE_PATH := device/realme/RMX1971
 # Use the non-open-source parts, if they're present
 $(call inherit-product-if-exists, vendor/realme/RMX1971/device-vendor.mk)
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 # Input
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
 
