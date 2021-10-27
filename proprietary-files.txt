@@ -80,7 +80,6 @@ product/lib64/libdpmfdmgr.so
 product/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
-vendor/bin/dpmQmiMgr
 
 # DRM - from RMX1971EX_11.C.15_1150
 product/vendor_overlay/29/lib/liboemcrypto.so|8a9faca380cffe55f062a7ef560499b8bccd07aa
