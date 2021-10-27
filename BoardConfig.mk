@@ -92,6 +92,7 @@ include $(DEVICE_PATH)-sepolicy/sepolicy.mk
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Vendor SPL
 VENDOR_SECURITY_PATCH := 2021-07-05
