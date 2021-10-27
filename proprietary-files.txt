@@ -89,6 +89,10 @@ product/vendor_overlay/29/lib64/liboemcrypto.so|57ccae9416310955179880ad1369922f
 vendor/lib/libops.so:product/vendor_overlay/29/lib/libops.so|fcf29fb24b76b90b2084d5db836903a3e6698f46
 vendor/lib64/libops.so:product/vendor_overlay/29/lib64/libops.so|68ab40f967b6cf9108f1fe3c7cb27762d78cb9b0
 
+# DRM - from blueline:/QP1A.191105.003
+vendor/lib/libspl.so:product/vendor_overlay/29/lib/libspl.so|6cbad4f6ffc3d629200bddece6764b0f61eff9c1
+vendor/lib64/libspl.so:product/vendor_overlay/29/lib64/libspl.so|d6e54e530032b2b19cde373969d414ae89360adf
+
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
