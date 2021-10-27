@@ -22,7 +22,7 @@
 DEVICE_PATH := device/realme/RMX1971
 
 # Use the non-open-source parts, if they're present
-$(call inherit-product-if-exists, vendor/realme/RMX1971/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/RMX1971/RMX1971-vendor.mk)
 
 # AAPT config
 PRODUCT_AAPT_CONFIG := normal
