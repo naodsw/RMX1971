@@ -86,6 +86,10 @@ vendor/bin/dpmQmiMgr
 product/vendor_overlay/29/lib/liboemcrypto.so|8a9faca380cffe55f062a7ef560499b8bccd07aa
 product/vendor_overlay/29/lib64/liboemcrypto.so|57ccae9416310955179880ad1369922fcabd8348
 
+# DRM - from kiev:10/QZKS30.Q4-40-81-3-2
+vendor/lib/libops.so:product/vendor_overlay/29/lib/libops.so|fcf29fb24b76b90b2084d5db836903a3e6698f46
+vendor/lib64/libops.so:product/vendor_overlay/29/lib64/libops.so|68ab40f967b6cf9108f1fe3c7cb27762d78cb9b0
+
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
