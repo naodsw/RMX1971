@@ -82,6 +82,10 @@ product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 
+# DRM
+product/vendor_overlay/29/lib/liboemcrypto.so
+product/vendor_overlay/29/lib64/liboemcrypto.so
+
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
