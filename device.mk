@@ -26,6 +26,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Kernel
 $(call inherit-product, $(DEVICE_PATH)-kernel/device-kernel.mk)
 
+# QTI components
+TARGET_BOARD_PLATFORM := sdm710
+TARGET_COMMON_QTI_COMPONENTS += all
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
