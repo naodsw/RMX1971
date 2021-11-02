@@ -13,7 +13,7 @@
 #else
 #Xuefeng.Peng@PSW.AD.Storage.0, 2019/03/28, Add for errors=panic  and FBE
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1,async_discard                               wait,check
-/dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,async_discard,lazytime,errors=panic       latemount,wait,check,fileencryption=ice,resize,quota,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,async_discard,lazytime,errors=panic       latemount,wait,check,encryptable=footer,reservedsize=128M
 #endif
 #ifndef VENDOR_EDIT
 #Xuefeng.Peng@PSW.AD.Storage.0, 2019/03/28, Add for
