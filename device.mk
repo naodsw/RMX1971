@@ -23,6 +23,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Initial API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# Input
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
+
 # Kernel
 $(call inherit-product, $(DEVICE_PATH)-kernel/device-kernel.mk)
 
