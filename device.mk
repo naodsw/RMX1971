@@ -14,13 +14,23 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/realme/RMX1971-kernel/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+# Environment variables
+DEVICE_PATH := device/realme/RMX1971
 
-PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+# Inherit dalvik configurations (4GB)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Initial API level
+PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Kernel
+$(call inherit-product, $(DEVICE_PATH)-kernel/device-kernel.mk)
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    $(DEVICE_PATH)-kernel \
+    $(DEVICE_PATH)-sepolicy
+
+# Use the non-open-source parts, if they're present
 $(call inherit-product-if-exists, vendor/realme/RMX1971/device-vendor.mk)
