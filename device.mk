@@ -16,6 +16,7 @@
 
 # Environment variables
 DEVICE_PATH := device/realme/RMX1971
+PRODUCT_TARGET_VNDK_VERSION := 29
 
 # Inherit dalvik configurations (4GB)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -32,6 +33,9 @@ $(call inherit-product, $(DEVICE_PATH)-kernel/device-kernel.mk)
 # QTI components
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_COMMON_QTI_COMPONENTS += all
+
+# Ramdisk
+PRODUCT_PACKAGES += fstab
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
