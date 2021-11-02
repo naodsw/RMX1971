@@ -14,10 +14,11 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_RMX1971.mk \
-    $(LOCAL_DIR)/pa_RMX1971.mk
+# Inherit full target configurations
+$(call inherit-product, device/realme/RMX1971/full_RMX1971.mk)
 
-COMMON_LUNCH_CHOICES := \
-    full_RMX1971-userdebug \
-    pa_RMX1971-userdebug
+# Inherit common AOSPA configurations
+$(call inherit-product, vendor/pa/config/common_full_phone.mk)
+
+# Target definitions
+PRODUCT_NAME := pa_RMX1971
