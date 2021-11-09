@@ -22,3 +22,4 @@ $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Target definitions
 PRODUCT_NAME := pa_RMX1971
+TARGET_DISABLES_GAPPS := true
