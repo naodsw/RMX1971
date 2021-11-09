@@ -41,6 +41,9 @@ USE_XML_AUDIO_POLICY_CONF := 1
 TARGET_BOOTLOADER_BOARD_NAME := sdm710
 TARGET_NO_BOOTLOADER := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
 # Kernel
 include $(DEVICE_PATH)-kernel/BoardConfigKernel.mk
 
