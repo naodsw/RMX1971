@@ -19,6 +19,9 @@ DEVICE_PATH := device/realme/RMX1971
 PRODUCT_TARGET_VNDK_VERSION := 29
 
 # Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.oppo.compat
 
