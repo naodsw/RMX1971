@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.9
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
