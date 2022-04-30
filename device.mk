@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += android.hardware.light@2.0-service.realme
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
